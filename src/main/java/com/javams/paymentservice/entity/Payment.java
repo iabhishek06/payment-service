@@ -3,6 +3,7 @@ package com.javams.paymentservice.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +12,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Payment {
 
 
@@ -21,4 +23,5 @@ public class Payment {
     private String transactionId;
     private int orderID;
     private double amount;
+    private String type;
 }
