@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
-// Strategy pattern
+// this class is called as Strategy pattern
 @Component
 public class PaymentFactory {
 
@@ -24,6 +24,6 @@ public class PaymentFactory {
             return internetBankingPaymentProvider;
         }
 
-        return internetBankingPaymentProvider;
+        return upiPaymentProvider;
     }
 }

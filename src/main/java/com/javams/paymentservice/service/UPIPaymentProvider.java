@@ -1,6 +1,7 @@
 package com.javams.paymentservice.service;
 
 
+import com.javams.paymentservice.model.Payment;
 import org.springframework.stereotype.Service;
 
 @Service

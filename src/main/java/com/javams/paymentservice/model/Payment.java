@@ -1,14 +1,11 @@
 package com.javams.paymentservice.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
+
 
 @Entity
 @Data
@@ -17,8 +14,6 @@ import org.springframework.data.annotation.Id;
 @Builder
 @Table(name = "payment_system")
 public class Payment {
-
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
